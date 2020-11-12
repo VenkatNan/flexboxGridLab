@@ -1,26 +1,98 @@
 html {
-    box-sizing: border-box
-   }
-   
-   /* The Universal Selector */
-   *, /* All elements*/
-   *::before, /* All ::before pseudo-elements */
-   *::after { /* All ::after pseudo-elements */
-    /* height & width will now include border & padding by default
-       but can be over-ridden as needed */
-    box-sizing: inherit;
-   }
-   
-   /* resets font size to be 62.5% of the user preference - 
-     in most browser configurations this will be 10px */
-   :root {
-    font-size: 62.5%
-   }
-   
-   body {
-    background-color: rgb(54, 114, 111);
-   /* Use a system font, if none are available use an available sans-sarif   font */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    margin: 0;
-   }
+  box-sizing: border-box
+  }
+  
+  /* The Universal Selector */
+  *, /* All elements*/
+  *::before, /* All ::before pseudo-elements */
+  *::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+      but can be over-ridden as needed */
+  box-sizing: inherit;
+  }
+  
+  /* resets font size to be 62.5% of the user preference - 
+    in most browser configurations this will be 10px */
+  :root {
+  font-size: 62.5%
+  }
+  
+body {
+  background-color: rgb(54, 114, 111);
+  /* Use a system font, if none are available use an available sans-sarif   font */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+#card{
+    margin: 40px;
+    width: 300px;
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 2rem;
+    border: 3px solid ghostwhite;
+    border-radius: 10px;
+
+}
+#status{
+    text-align: right;
+    padding: 15px;
+    color: rgb(112, 241, 166);
+    font-weight: bold;
+}
+
+img{
+  border-radius: 100px;
+  border: 4px solid rgb(112, 241, 166);
+}
+
+h1,p{
+  margin: 0;
+}
+
+h1{
+  font-size: 3rem;
+}
+#ocptn{
+  margin: 20px 0 20px 0;
+  padding: 10px 0 10px 0;
+  background-color: rgba(160, 158, 158, 0.863);
+
+}
+#ocptn > p:first-child{
+  color: rgb(255, 114, 142);
+  font: outline;
+}
+  
+#brand{
+    display: none;
+}
+#offer{
+  margin: 20px 0 20px 0;
+  padding: 10px 0 10px 0;
+}
+
+#phone{
+  display: flex;
+}
+
+#phone > p{
+  height: 60px;
+  width: 50%;
+  
+}
+
+button{
+  background-color: rgb(112, 241, 166);
+  border: none ;
+  border-radius: 8px;
+  margin: 1px;
+  height: 75px;
+  width: 50%;
+  font-size: 5rem;
+}
